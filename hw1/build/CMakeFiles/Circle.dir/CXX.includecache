@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/yuchen/Nyu/graphics/hw1/draw_circle.cpp
+stdio.h
+-
+math.h
+-
+vector
+-
+fstream
+-
+iostream
+-
+string
+-
+GLUT/glut.h
+-
+GL/glut.h
+-
+
