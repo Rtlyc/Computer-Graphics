@@ -240,7 +240,7 @@ void file_in(std::string filename, std::vector<Circle*>& circles)
 
 void idle(void)
 {
-    COUNT = COUNT %= K;
+    COUNT = COUNT % K;
     COUNT++;
 
     glutPostRedisplay(); // or call display()

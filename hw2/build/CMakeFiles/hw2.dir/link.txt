@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -std=c++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/hw2.dir/InitShader.cpp.o CMakeFiles/hw2.dir/rotate-circle.cpp.o  -o hw2  -framework OpenGL -framework OpenGL -framework GLUT -framework Cocoa 
