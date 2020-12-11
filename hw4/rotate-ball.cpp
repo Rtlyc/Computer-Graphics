@@ -593,10 +593,13 @@ void display(void)
     glUniform1i(glGetUniformLocation(program, "ground_Textured"),0);
     glUniform1i(glGetUniformLocation(program, "sphere_Textured"),0);
     glUniform1f(glGetUniformLocation(program, "sphereLattice"),0);
+    glUniform1i(glGetUniformLocation(program, "ground_Textured"), 0);
+    glUniform1i(glGetUniformLocation(program, "sphere_Textured"),0);
+    glUniform1f(glGetUniformLocation(program, "sphereLattice"),0);
 #pragma endregion
 
     glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-    // drawObj(axis_buffer, axis_NumVertices, false); // draw axis
+    drawObj(axis_buffer, axis_NumVertices, false); // draw axis
 
 #pragma region Z - buffer Algorithms
     glDepthMask(GL_FALSE);
@@ -1100,6 +1103,7 @@ void ParticleOpenMenu(int id){
     default:
         break;
     }
+    glutPostRedisplay();
 }
 
 //----------------------------------------------------------------------------
